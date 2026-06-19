@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickShop E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">QuickShop</div>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+
+        <nav>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart-icon" id="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to QuickShop</h1>
+        <p>Find the best deals on your favorite items.</p>
+    </section>
+
+    <main>
+        <h2>Our Products</h2>
+        <p id="no-results" class="hidden">No products found matching your search.</p>
+        <div class="product-grid" id="product-grid">
+            </div>
+    </main>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            </div>
+        <div class="cart-footer">
+            <h4>Total: $<span id="cart-total">0.00</span></h4>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
